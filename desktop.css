@@ -317,11 +317,11 @@ span {
   }
   .step2 {
     #Nextstep {
-      transform: translateX(180%) translateY(-45%);
+      transform: translateX(190%) translateY(20%);
       display: inline-block;
     }
     #back {
-      transform: translateX(-50%) translateY(-45%);
+      transform: translateX(-50%) translateY(20%);
       display: inline-block;
     }
     height: 50em;
@@ -387,11 +387,11 @@ span {
   }
   .step3 {
     #Nextstep {
-      transform: translateX(180%) translateY(-45%);
+      transform: translateX(210%) translateY(5%);
       display: inline-block;
     }
     #back {
-      transform: translateX(-120%) translateY(-45%);
+      transform: translateX(-30%);
       display: inline-block;
     }
     .content {
@@ -410,14 +410,15 @@ span {
     flex-direction: column;
     .content {
       margin-top: -10%;
+      height: 30em;
       /* margin-bottom: 200px; */
     }
     #Nextstep {
-      transform: translateX(120%) translateY(300%);
+      transform: translateX(120%) translateY(100%);
       display: inline-block;
     }
     #back {
-      transform: translateX(-10%) translateY(300%);
+      transform: translateX(-10%) translateY(100%);
       display: inline-block;
     }
   }

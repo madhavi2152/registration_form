@@ -14,10 +14,8 @@ let finalstring = ["Advanced 120", "onlineservice,storage 10,20"];
 let nextstep = document.getElementById("Nextstep");
 let back = document.getElementById("back");
 function step5fun() {
-  let next = document.querySelector("#Nextstepb");
-  let prev = document.querySelector("#backb");
-  next.style.display = "none";
-  prev.style.display = "none";
+  nextstep.style.display = "none";
+  back.style.display = "none";
   let step5 = document.querySelector(".step5");
   step5.style.display = "flex";
 }
