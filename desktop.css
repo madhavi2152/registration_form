@@ -86,7 +86,7 @@ body {
   transform: translateX(350%);
 }
 #back {
-  transform: translateX(50%);
+  transform: translateX(10%);
 }
 span {
   margin-top: 7px;
@@ -127,10 +127,11 @@ span {
     }
   }
   #Nextstep {
-    margin-top: 150px;
+    margin-top: 110px;
   }
   #back {
-    margin-top: -50px;
+    margin-left: -100px;
+    margin-top: -100px;
   }
 }
 
@@ -271,10 +272,6 @@ span {
 .step4,
 .step5 {
   display: none;
-  #Nextstep,
-  #back {
-    display: block;
-  }
 }
 
 .plan {
@@ -298,6 +295,10 @@ span {
   }
 
   .step1 {
+    #Nextstep {
+      transform: translateX(180%) translateY(300%);
+      display: inline-block;
+    }
     flex-direction: column;
     #form-step1 {
       height: 80%;
@@ -315,9 +316,18 @@ span {
     }
   }
   .step2 {
+    #Nextstep {
+      transform: translateX(180%) translateY(-45%);
+      display: inline-block;
+    }
+    #back {
+      transform: translateX(-50%) translateY(-45%);
+      display: inline-block;
+    }
+    height: 50em;
     flex-direction: column;
     .content {
-      height: 50%;
+      height: 65%;
     }
     .details {
       flex-wrap: wrap;
@@ -376,6 +386,18 @@ span {
     }
   }
   .step3 {
+    #Nextstep {
+      transform: translateX(180%) translateY(-45%);
+      display: inline-block;
+    }
+    #back {
+      transform: translateX(-120%) translateY(-45%);
+      display: inline-block;
+    }
+    .content {
+      margin-top: -25px;
+      height: 30em;
+    }
     flex-direction: column;
     .onlineservice,
     .storage,
@@ -388,7 +410,15 @@ span {
     flex-direction: column;
     .content {
       margin-top: -10%;
-      margin-bottom: 200px;
+      /* margin-bottom: 200px; */
+    }
+    #Nextstep {
+      transform: translateX(120%) translateY(300%);
+      display: inline-block;
+    }
+    #back {
+      transform: translateX(-10%) translateY(300%);
+      display: inline-block;
     }
   }
   .step5 {
@@ -408,14 +438,14 @@ span {
     margin: 0px;
     height: 15rem;
     border: 0px;
-    width: 425px;
+    width: 100%;
     display: flex;
     .step1menu,
     .step2menu,
     .step3menu,
     .step4menu {
       display: flex;
-      margin-left: 6%;
+      margin-left: 3%;
       margin-top: 10%;
     }
   }
@@ -432,16 +462,12 @@ span {
     height: 50%;
     margin-left: 9%;
     transform: translateY(-15%);
-    #Nextstep,
-    #back {
-      display: none;
-    }
   }
   body {
     display: block;
     padding: 0;
     width: 100%;
-    height: max-content;
+    /* height: 50%; */
     margin: 0;
     background-color: white;
     #Nextstepb {

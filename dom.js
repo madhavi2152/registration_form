@@ -21,7 +21,6 @@ function step5fun() {
   let step5 = document.querySelector(".step5");
   step5.style.display = "flex";
 }
-
 function step4fun(price, priceflag) {
   console.log(price, priceflag);
   let step5 = document.querySelector(".step5");
@@ -97,19 +96,19 @@ function step4fun(price, priceflag) {
       step3fun(Number(plancostv), priceflag);
     }
   });
-  let nextstepb = document.getElementById("Nextstepb");
-  let backb = document.getElementById("backb");
-  nextstepb.addEventListener("click", () => {
-    step4.style.display = "none";
-    step5fun();
-  });
-  backb.addEventListener("click", () => {
-    step4.style.display = "none";
-    totvalue.innerHTML = "";
-    keys.innerHTML = "";
-    values.innerHTML = "";
-    step3fun(plancostv, priceflag);
-  });
+  // let nextstepb = document.getElementById("Nextstepb");
+  // let backb = document.getElementById("backb");
+  // nextstepb.addEventListener("click", () => {
+  //   step4.style.display = "none";
+  //   step5fun();
+  // });
+  // backb.addEventListener("click", () => {
+  //   step4.style.display = "none";
+  //   totvalue.innerHTML = "";
+  //   keys.innerHTML = "";
+  //   values.innerHTML = "";
+  //   step3fun(plancostv, priceflag);
+  // });
 }
 // step3fun(9);
 function step3fun(price, priceflag) {
@@ -198,17 +197,17 @@ function step3fun(price, priceflag) {
       step2fun();
     }
   });
-  let nextstepb = document.getElementById("Nextstepb");
-  let backb = document.getElementById("backb");
-  nextstepb.addEventListener("click", (data) => {
-    finalstring[1] = `${Object.keys(obj)} ${Object.values(obj)}`;
-    step3.style.display = "none";
-    step4fun(finalprice, priceflag);
-  });
-  backb.addEventListener("click", (data) => {
-    step3.style.display = "none";
-    step2fun();
-  });
+  // let nextstepb = document.getElementById("Nextstepb");
+  // let backb = document.getElementById("backb");
+  // nextstepb.addEventListener("click", (data) => {
+  //   finalstring[1] = `${Object.keys(obj)} ${Object.values(obj)}`;
+  //   step3.style.display = "none";
+  //   step4fun(finalprice, priceflag);
+  // });
+  // backb.addEventListener("click", (data) => {
+  //   step3.style.display = "none";
+  //   step2fun();
+  // });
 }
 function step2fun() {
   let step5 = document.querySelector(".step5");
@@ -238,6 +237,7 @@ function step2fun() {
     if (check.checked) {
       console.log("hey checked");
       priceflag = "yearly";
+      console.log(priceflag);
       circle.style.marginLeft = "50%";
       circle.style.marginRight = "0px";
       yearly.forEach((element) => {
@@ -247,7 +247,9 @@ function step2fun() {
         element.style.display = "none";
       });
     } else {
+      console.log("in monthly");
       priceflag = "monthly";
+      console.log(priceflag);
       circle.style.marginLeft = "0px";
       circle.style.marginRight = "50%";
       monthly.forEach((element) => {
@@ -263,6 +265,7 @@ function step2fun() {
     if (id !== "") {
       id.style.border = "2px solid hsl(231, 11%, 63%) ";
     }
+    console.log(priceflag);
     console.log(data);
     console.log(data.target);
     console.log(data.target.id);
@@ -289,6 +292,7 @@ function step2fun() {
     }
     finalstring[0] = `${id.id} ${finalprice}`;
   });
+  console.log(priceflag + "above step2listener");
   step2.addEventListener("click", (data) => {
     if (data.target.id === nextstep.id) {
       if (id === "") {
@@ -305,22 +309,25 @@ function step2fun() {
       step1fun();
     }
   });
-  let nextstepb = document.getElementById("Nextstepb");
-  let backb = document.getElementById("backb");
-  nextstepb.addEventListener("click", (data) => {
-    if (id === "") {
-      alert("select any option");
-    } else {
-      step2.style.display = "none";
-      check.checked = false;
-      step3fun(finalprice, priceflag);
-    }
-  });
-  backb.addEventListener("click", (data) => {
-    check.checked = false;
-    step2.style.display = "none";
-    step1fun();
-  });
+  console.log(priceflag + "above stepblistener");
+
+  // let nextstepb = document.getElementById("Nextstepb");
+  // let backb = document.getElementById("backb");
+  // nextstepb.addEventListener("click", (data) => {
+  //   if (id === "") {
+  //     alert("select any option");
+  //   } else {
+  //     step2.style.display = "none";
+  //     check.checked = false;
+  //     console.log(finalprice, priceflag);
+  //     step3fun(finalprice, priceflag);
+  //   }
+  // });
+  // backb.addEventListener("click", (data) => {
+  //   check.checked = false;
+  //   step2.style.display = "none";
+  //   step1fun();
+  // });
 }
 
 function step1fun() {
@@ -366,16 +373,16 @@ function step1fun() {
       alert("enter all details properly");
     }
   });
-  let nextstepb = document.getElementById("Nextstepb");
-  nextstepb.addEventListener("click", (data) => {
-    console.log(data);
-    if (username !== "" && useremail !== undefined && userphone !== undefined) {
-      step1.style.display = "none";
-      step2fun();
-    } else {
-      alert("enter all details properly");
-    }
-  });
+  // let nextstepb = document.getElementById("Nextstepb");
+  // nextstepb.addEventListener("click", (data) => {
+  //   console.log(data);
+  //   if (username !== "" && useremail !== undefined && userphone !== undefined) {
+  //     step1.style.display = "none";
+  //     step2fun();
+  //   } else {
+  //     alert("enter all details properly");
+  //   }
+  // });
 }
 
 step1fun();
