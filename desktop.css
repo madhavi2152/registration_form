@@ -290,44 +290,47 @@ span {
     width: 100%;
     padding: 0;
     margin: 0;
-    /* height: 30%; */
+    height: 42em;
+    /* margin-bottom: -50px; */
     background-color: hsl(206, 94%, 87%);
   }
 
   .step1 {
     #Nextstep {
-      transform: translateX(180%) translateY(300%);
+      transform: translateX(220%) translateY(190%);
       display: inline-block;
     }
     flex-direction: column;
     #form-step1 {
-      height: 80%;
+      height: 50%;
     }
     #Name,
     #email,
     #phone {
       margin-top: -30px;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       height: 40px;
       width: 100%;
     }
     .content {
-      height: 50%;
+      margin-top: -10%;
+      padding-top: 10px;
+      height: 10%;
     }
   }
   .step2 {
     #Nextstep {
-      transform: translateX(190%) translateY(20%);
+      transform: translateX(200%) translateY(-300%);
       display: inline-block;
     }
     #back {
-      transform: translateX(-50%) translateY(20%);
+      transform: translateX(-50%) translateY(-300%);
       display: inline-block;
     }
     height: 50em;
     flex-direction: column;
     .content {
-      height: 65%;
+      height: 55%;
     }
     .details {
       flex-wrap: wrap;
@@ -387,16 +390,16 @@ span {
   }
   .step3 {
     #Nextstep {
-      transform: translateX(210%) translateY(5%);
+      transform: translateX(210%) translateY(-180%);
       display: inline-block;
     }
     #back {
-      transform: translateX(-30%);
+      transform: translateX(-30%) translateY(-180%);
       display: inline-block;
     }
     .content {
       margin-top: -25px;
-      height: 30em;
+      height: 29em;
     }
     flex-direction: column;
     .onlineservice,
@@ -414,11 +417,11 @@ span {
       /* margin-bottom: 200px; */
     }
     #Nextstep {
-      transform: translateX(120%) translateY(100%);
+      transform: translateX(120%) translateY(-5%);
       display: inline-block;
     }
     #back {
-      transform: translateX(-10%) translateY(100%);
+      transform: translateX(0%) translateY(-5%);
       display: inline-block;
     }
   }
@@ -460,7 +463,7 @@ span {
     padding-bottom: 0;
     background-color: white;
     width: 70%;
-    height: 50%;
+    height: 30%;
     margin-left: 9%;
     transform: translateY(-15%);
   }
