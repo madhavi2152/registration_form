@@ -344,15 +344,15 @@ function step1fun() {
 
   form.addEventListener("keydown", (data) => {
     console.log(data.target.id);
-    if (data.target.id === "Name" && data.key === "Enter") {
+    if (data.target.id === "Name") {
       username = data.target.value;
       console.log(username);
     }
-    if (data.target.id === "email" && data.key === "Enter") {
+    if (data.target.id === "email") {
       useremail = data.target.value;
       console.log(useremail);
     }
-    if (data.target.id === "phone" && data.key === "Enter") {
+    if (data.target.id === "phone") {
       userphone = data.target.value;
       console.log(userphone);
     }
