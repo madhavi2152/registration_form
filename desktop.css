@@ -1,0 +1,473 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.footer {
+  display: none;
+}
+#backb,
+#Nextstepb {
+  display: none;
+}
+body {
+  background-color: hsl(206, 94%, 87%);
+  font-family: Ubuntu;
+  padding-top: 150px;
+  padding-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer {
+  background-color: white;
+  width: 1000px;
+  padding: 30px;
+}
+
+.stepsmenu {
+  width: 450px;
+  height: 700px;
+  background-image: url("./assets/images/bg-sidebar-desktop.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.content {
+  color: black;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.content h1 {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.content p {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+#form-step1 p {
+  color: hsl(213, 96%, 18%);
+}
+#form-step1 input {
+  padding-left: 5px;
+  border: 1px solid hsl(231, 11%, 63%);
+  border-radius: 5px;
+}
+#Name,
+#email,
+#phone {
+  margin-top: -30px;
+  margin-bottom: 30px;
+  height: 60px;
+  width: 100%;
+}
+#Nextstep,
+#back {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+#Nextstep,
+#back {
+  height: 50px;
+  width: 100px;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  border-radius: 10px;
+  transform: translateX(350%);
+}
+#back {
+  transform: translateX(50%);
+}
+span {
+  margin-top: 7px;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+}
+.step3 {
+  .onlineservice,
+  .storage,
+  .profile {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    width: 450px;
+    height: 85px;
+    border: 2px solid hsl(231, 11%, 63%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    #check-onlineservice,
+    #check-storage,
+    #check-profile {
+      height: 25px;
+      width: 25px;
+      transform: translateY(30px);
+    }
+    h2 {
+      transform: translateX(15%);
+      color: hsl(213, 96%, 18%);
+    }
+    p {
+      transform: translateX(15%);
+    }
+    #price-monthly,
+    #price-yearly {
+      float: right;
+      transform: translatey(-60px);
+      color: blue;
+    }
+  }
+  #Nextstep {
+    margin-top: 150px;
+  }
+  #back {
+    margin-top: -50px;
+  }
+}
+
+.step1menu,
+.step2menu,
+.step3menu,
+.step4menu {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.first {
+  height: 20px;
+  width: 20px;
+  border-radius: 40px;
+  border: 2px solid white;
+  color: white;
+  margin-right: 15px;
+  text-align: center;
+  padding: 20px;
+}
+.second {
+  color: white;
+}
+.step2 .content {
+  #Arcade,
+  #Advanced,
+  #Pro {
+    padding: 10px;
+    height: 180px;
+    width: 120px;
+    border: 2px solid hsl(231, 11%, 63%);
+    margin: 10px;
+    color: hsl(231, 11%, 63%);
+    border-radius: 10px;
+    font-size: larger;
+    p {
+      color: hsl(213, 96%, 18%);
+      font-weight: 700;
+    }
+  }
+  img {
+    margin-bottom: 80px;
+  }
+  p {
+    font-weight: 700;
+  }
+  .pricemonthly,
+  .priceyearly {
+    margin-top: -30px;
+  }
+}
+.step4 {
+  #back {
+    margin-top: 90%;
+    margin-left: -10%;
+    margin-right: 0;
+  }
+  #Nextstep {
+    margin-top: -50px;
+  }
+}
+.options {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.step2 {
+  #Nextstep {
+    margin-top: 200px;
+  }
+  #back {
+    margin-top: -50px;
+    margin-left: -70px;
+  }
+}
+
+.checkstyle {
+  width: 80px;
+  height: 40px;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 30px;
+}
+
+#check {
+  height: 60px;
+  width: 100px;
+  background-color: black;
+  opacity: 0;
+}
+
+#circle {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: -61px;
+  margin-left: 0px;
+  margin-right: 40px;
+}
+
+.details {
+  display: flex;
+}
+.priceyearly {
+  display: none;
+}
+.pricemonthly {
+  display: block;
+}
+.choices {
+  .plan,
+  .addons,
+  .total {
+    justify-content: space-between;
+  }
+}
+
+.step5 {
+  align-items: center;
+  .thankyou {
+    width: 50%;
+
+    text-align: center;
+    h1 {
+      margin-top: 30px;
+    }
+    p {
+      font-size: larger;
+      color: gray;
+      margin-top: 30px;
+    }
+  }
+}
+.step2,
+.step1,
+.step3,
+.step4,
+.step5 {
+  display: none;
+  #Nextstep,
+  #back {
+    display: block;
+  }
+}
+
+.plan {
+  border-bottom: 0.5px solid gray;
+  padding-bottom: 10px;
+}
+.change {
+  text-decoration: none;
+  background-color: white;
+  border: 0;
+  border-bottom: 1px solid gray;
+}
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+  .outer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* height: 30%; */
+    background-color: hsl(206, 94%, 87%);
+  }
+
+  .step1 {
+    flex-direction: column;
+    #form-step1 {
+      height: 80%;
+    }
+    #Name,
+    #email,
+    #phone {
+      margin-top: -30px;
+      margin-bottom: 10px;
+      height: 40px;
+      width: 100%;
+    }
+    .content {
+      height: 50%;
+    }
+  }
+  .step2 {
+    flex-direction: column;
+    .content {
+      height: 50%;
+    }
+    .details {
+      flex-wrap: wrap;
+    }
+    .content #Arcade,
+    .content #Advanced,
+    .content #Pro {
+      padding: 10px;
+      height: fit-content;
+      width: 90%;
+      border-radius: 10px;
+      font-size: larger;
+      p {
+        margin-top: -50%;
+        margin-left: 30%;
+        width: fit-content;
+      }
+      .pricemonthly,
+      .priceyearly {
+        width: fit-content;
+        margin-top: -30px;
+        margin-left: 70px;
+      }
+    }
+    img {
+      margin-bottom: 80px;
+    }
+    p {
+      font-weight: 700;
+    }
+    .options {
+      width: 200px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .checkstyle {
+      width: 40px;
+      height: 20px;
+      border-radius: 15px;
+    }
+
+    #check {
+      height: 30px;
+      width: 50px;
+      opacity: 0;
+    }
+
+    #circle {
+      height: 20px;
+      width: 20px;
+      background-color: white;
+      border-radius: 10px;
+      margin-top: -30.5px;
+      margin-left: 0px;
+      margin-right: 20px;
+    }
+  }
+  .step3 {
+    flex-direction: column;
+    .onlineservice,
+    .storage,
+    .profile {
+      font-size: small;
+      width: 90%;
+    }
+  }
+  .step4 {
+    flex-direction: column;
+    .content {
+      margin-top: -10%;
+      margin-bottom: 200px;
+    }
+  }
+  .step5 {
+    flex-direction: column;
+    .thankyou {
+      z-index: 1;
+      background-color: white;
+      width: fit-content;
+      margin-top: -25%;
+    }
+  }
+
+  .stepsmenu {
+    z-index: 0;
+    background-image: url("./assets/images/bg-sidebar-mobile.svg");
+    background-size: 100%;
+    margin: 0px;
+    height: 15rem;
+    border: 0px;
+    width: 425px;
+    display: flex;
+    .step1menu,
+    .step2menu,
+    .step3menu,
+    .step4menu {
+      display: flex;
+      margin-left: 6%;
+      margin-top: 10%;
+    }
+  }
+  .second {
+    display: none;
+  }
+  .content {
+    border-radius: 10px;
+    z-index: 1;
+    margin: 0;
+    padding-bottom: 0;
+    background-color: white;
+    width: 70%;
+    height: 50%;
+    margin-left: 9%;
+    transform: translateY(-15%);
+    #Nextstep,
+    #back {
+      display: none;
+    }
+  }
+  body {
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    background-color: white;
+    #Nextstepb {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      height: 50px;
+      width: 100px;
+      background-color: hsl(213, 96%, 18%);
+      color: white;
+      border-radius: 10px;
+      transform: translateX(220%);
+      display: inline-block;
+    }
+    #backb {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      height: 50px;
+      width: 100px;
+      background-color: hsl(213, 96%, 18%);
+      color: white;
+      border-radius: 10px;
+      transform: translateY(0);
+      transform: translateX(0);
+      display: inline-block;
+    }
+  }
+}
