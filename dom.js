@@ -49,7 +49,7 @@ function step4fun(price, priceflag) {
     step2fun();
   });
   key.innerHTML = `<span>${planv}</span>`;
-  value.innerHTML = `<span>${plancostv}</span>`;
+  value.innerHTML = `<span>${plancostv}$/${priceflag}</span>`;
   value.style.marginLeft = "90%";
   value.style.marginTop = "-5%";
 
@@ -65,20 +65,20 @@ function step4fun(price, priceflag) {
   let valuesdata = addonsdata[1].split(",");
   if (keysdata.length === 1) {
     keys.innerHTML = `<p>${keysdata[0]} </p>`;
-    values.innerHTML = `<p> ${valuesdata[0]}</p>`;
+    values.innerHTML = `<p> ${valuesdata[0]}$/${priceflag}</p>`;
   }
   if (keysdata.length === 2) {
     keys.innerHTML = `<p>${keysdata[0]} </p> <p>${keysdata[1]}</p>`;
-    values.innerHTML = `<p> ${valuesdata[0]}</p><p>${valuesdata[1]}</p>`;
+    values.innerHTML = `<p> ${valuesdata[0]}$/${priceflag}</p><p>${valuesdata[1]}$/${priceflag}</p>`;
   }
   if (keysdata.length === 3) {
     keys.innerHTML = `<p>${keysdata[0]} </p> <p>${keysdata[1]}</p> <p>${keysdata[2]}</p>`;
-    values.innerHTML = `<p>${valuesdata[0]}</p><p>${valuesdata[1]}</p><p>${valuesdata[2]}</p>`;
+    values.innerHTML = `<p>${valuesdata[0]}$/${priceflag}</p><p>${valuesdata[1]}$/${priceflag}</p><p>${valuesdata[2]}$/${priceflag}</p>`;
   }
   let total = document.querySelector(".total");
   console.log(total);
   let totvalue = document.querySelector(".totvalue");
-  totvalue.innerHTML = `<p> ${price}</p>`;
+  totvalue.innerHTML = `<p> ${price}$/${priceflag}</p>`;
   total.style.display = "flex";
 
   step4.addEventListener("click", (data) => {
